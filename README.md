@@ -1,2 +1,2 @@
-# UnityScripts
-Useful scripts
+# うにてぃの使いやすいスクリプト
+使いやすいスクリプト。
