@@ -1,7 +1,10 @@
 //レーダーのアニメーションにDotweenを使っています
+using DG.Tweening;
 
 [SerializeField] Camera playerCamera;
 [SerializeField] GameObject nextEvenetObject;
+[SerializeField] GameObject Signal_UI;
+private Tweener currentTweener_signalUI;
 private const int signalDegree = 45;
 private int currentSignalPower = 0;
 
