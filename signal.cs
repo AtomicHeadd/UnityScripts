@@ -1,4 +1,5 @@
 //レーダーのアニメーションにDotweenを使っています
+//必要なところ以外消して使ってください
 using DG.Tweening;
 
 [SerializeField] Camera playerCamera;
