@@ -19,3 +19,7 @@ Resource下に配置された各言語のファイルをenumのInGameTextと同�
 テキストの区切りは改行、テキスト内の改行は'$'でエスケープする
 実際にコンポーネントにする際はtargetTMPにTMP、targetInGameTextに対応するenumを同じ順番で入れる。
 フォントの変更には未対応。TMPに代入するときに一緒に変える形で実装はできる。
+
+- jp.txt
+
+localizer.csのサンプルテキスト。Resource下に置く。
