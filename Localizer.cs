@@ -24,7 +24,7 @@ public class Localizer : MonoBehaviour
             targetTMPs[i].text = texts[(int)targetTexts[i]].Replace(newLineSymbol, '\n');
         }
     }
-    //例えば徐々に増えていくダイアログなどの演出はこちらを利用
+    //例えば徐々に増えていくダイアログや一つのTMPに複数のテキストが入る場合は別で処理を書く
     public static string[] GetTexts()
     {
         TextAsset textAsset = language == Language.jp ? Resources.Load<TextAsset>(PATH_JP) : Resources.Load<TextAsset>(PATH_ENG);
