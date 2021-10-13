@@ -12,7 +12,7 @@ public class MyCollision : MonoBehaviour
     private void Update()
     {
         if (rbody == null) rbody = GetComponent<Rigidbody>();
-        if (rbody.velocity.magnitude < 100) return;
+        if (rbody.velocity.magnitude < .1f) return;
 
         ScanForward(transform.position, rbody.velocity * Time.deltaTime);
     }
