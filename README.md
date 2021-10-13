@@ -23,3 +23,9 @@ Resource下に配置された各言語のファイルをenumのInGameTextと同�
 - jp.txt
 
 localizer.csのサンプルテキスト。Resource下に置く。
+
+- MyCollision.cs
+
+衝突判定用のスクリプト。銃弾など速い物体の衝突に用いる。
+そのままではRigidBody必須だが、すこし変えれば無くても動く。
+すり抜ける際は生成時にScanForward()を生成側から呼び出すこと。
