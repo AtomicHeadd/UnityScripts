@@ -7,7 +7,7 @@ public class LazyLight : MonoBehaviour
     [SerializeField] Transform targetTransform;
     Vector3 offset;
 
-    private void Start()
+    private void Awake()
     {
         offset = transform.position - targetTransform.position;
     }
