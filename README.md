@@ -5,6 +5,14 @@
 
 # 各スクリプトの説明
 
+- Multiplayer.cs
+
+アタッチするだけでUDPマルチプレイが可能なスクリプト。
+myPortに自分のポートをopponentPortには通信相手のポートを入力。
+playerに自分のキャラクター、otherPlayerに相手のキャラクターを登録。
+ParrelSyncなどを利用して2つのクライアントを起動した後に、コンポーネントのContextMenuからRegisterをそれぞれのクライアントで押す。
+enableSmoothingを押すことで受信間のフレームで線形補完をする。
+
 - LazyLight.cs
 
 カメラの向きをゆっくりと追うライト
