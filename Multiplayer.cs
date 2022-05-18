@@ -7,6 +7,15 @@ using System;
 using System.Threading;
 using System.Linq;
 //using ParrelSync;
+//使い方
+//1. このスクリプトをアタッチします。
+//2. myPortは自分のポート、opponentPortは相手のポートです。テストでは2つのクライアントで交互になるように入力します。
+//3. playerは自分のキャラクター、otherPlayerObjectsは相手のキャラクターです。あらかじめ用意してアタッチしましょう。
+//4. ParrelSyncなどを使い2つのエディターを立ち上げます(ビルドとエディターでデバッグする方法もありますが、ParrelSyncなどを使った方が効率的なのでおススメです)。
+//5. 各エディターでmyPortとopponentPortが交互になっているのを確認します(クライアントAで3000, 3001ならクライアントBでは3001, 3000)。
+//6. 両方のエディターでプレイボタンを押し、スクリプトのcontext menuからRegisterを押します。
+//7. 両方のRegisterを押すと同期が開始します。Playerオブジェクトを動かして一方のエディターのotherPlayerが動いているか確認しましょう。
+//8. enableSmoothingを用いるとフレーム間の位置を線形補完します。結果、滑らかに見えます。
 
 public class Multiplayer : MonoBehaviour
 {
