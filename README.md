@@ -13,6 +13,8 @@ playerに自分のキャラクター、otherPlayerに相手のキャラクター
 ParrelSyncなどを利用して2つのクライアントを起動した後に、コンポーネントのContextMenuからRegisterをそれぞれのクライアントで押す。
 enableSmoothingを押すことで受信間のフレームで線形補完をする。
 
+奇妙なスレッドの使い方をしているが、これはUnityAPIをサブスレッドから利用できないため。
+
 - LazyLight.cs
 
 カメラの向きをゆっくりと追うライト
