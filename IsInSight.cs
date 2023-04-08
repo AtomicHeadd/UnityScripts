@@ -14,7 +14,7 @@ public static class VisionExt
     /// <param name="fov">angle that "from" object can see</param>
     /// <param name="maxDistance">distance that "from" object can see</param>
     /// <returns>if "to" object can be seen from "from" object</returns>
-    public static bool IsInVision(this GameObject from, GameObject to, LayerMask subjectLayer, float fov=360, float maxDistance=1000)
+    public static bool IsInSight(this GameObject from, GameObject to, LayerMask subjectLayer, float fov=360, float maxDistance=1000)
     {
         Vector3 sub = to.transform.position - from.transform.position;
         if (Vector3.Angle(from.transform.forward, sub) > fov) return false;
